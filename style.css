@@ -53,17 +53,22 @@ table {
     --thirdcolor: #ECFDF5;
 }
 body {
+    height: 100vh;
     display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 header {
-
+background-color: var(--thirdcolor);
+grid-area: 1 / 2 / 2 / 3;
 }
 
 nav {
-
+background-color: var(--primarycolor);
+grid-area: 1 / 1 / 3 / 2;
 }
 
 main {
-
+background-color: var(--secondarycolor);
 }
