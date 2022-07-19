@@ -49,15 +49,16 @@ table {
 
 :root {
     --primarycolor: #047857;
-    --secondarycolor: lightgrey;
+    --secondarycolor: #D1FAE5;
     --thirdcolor: white;
 	--fourthcolor: #C42C00;
 }
 body {
+	font-family: monospace;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 2fr 7fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 header {
@@ -76,24 +77,51 @@ display: grid;
 grid-template-columns: 3fr 1fr;
 grid-template-rows: repeat(2, 1fr);
 gap: 20px;
-padding: 20px;
+padding: 40px 20px;
 }
-
+h2 {
+	font-size: 18px;
+}
 .projects {
 	grid-area: 1 / 1 / 3 / 2;
-	background-color: var(--thirdcolor);
-
-	
+	display: flex;
+	flex-direction: column;
 }
 
 .announcements {
 	grid-area: 1 / 2 / 2 / 3;
-	background-color: var(--thirdcolor);
-
+	display: flex;
+	flex-direction: column;
 }
 
 .trending {
 	grid-area: 2 / 2 / 3 / 3;
-	background-color: var(--thirdcolor);
+	display: flex;
+	flex-direction: column;
+}
 
+.tiles {
+	margin-block: 10px;
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.tile {
+	background-color: var(--thirdcolor);
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px lightgray;
+}
+
+.projects .tile {
+	border-left: 10px var(--fourthcolor) solid;
+	
+}
+
+.announcements .tile, .trending .tile {
+	margin-block: 10px;
+	flex: 1;
+	display: grid;
 }
