@@ -48,10 +48,10 @@ table {
 }
 
 :root {
-    --primarycolor: #059669;
-    --secondarycolor: #D1FAE5;
+    --primarycolor: #6D28D9;
+    --secondarycolor: #F5F3FF;
     --thirdcolor: white;
-	--fourthcolor: #C42C00;
+	--fourthcolor: #94D928;
 }
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -90,6 +90,8 @@ grid-template-columns: 3fr 1fr;
 grid-template-rows: repeat(2, 1fr);
 gap: 20px;
 padding: 40px 20px;
+box-shadow: inset 0px 2px 10px lightgray;
+
 }
 
 h1 {
@@ -139,7 +141,7 @@ a:visited {
 .tile {
 	background-color: var(--thirdcolor);
 	border-radius: 10px;
-	box-shadow: 2px 2px 4px lightgray;
+	box-shadow: 2px 2px 10px lightgray;
 }
 
 .projects .tile {
