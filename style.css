@@ -48,14 +48,14 @@ table {
 }
 
 :root {
-    --primarycolor: #047857;
+    --primarycolor: #059669;
     --secondarycolor: #D1FAE5;
     --thirdcolor: white;
 	--fourthcolor: #C42C00;
 }
 body {
-	font-family: 'Comfortaa', cursive;
-	font-weight: bolder;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 7fr;
