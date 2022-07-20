@@ -54,7 +54,8 @@ table {
 	--fourthcolor: #C42C00;
 }
 body {
-	font-family: monospace;
+	font-family: 'Comfortaa', cursive;
+	font-weight: bolder;
     height: 100vh;
     display: grid;
     grid-template-columns: 2fr 7fr;
@@ -70,6 +71,16 @@ nav {
 background-color: var(--primarycolor);
 color: var(--thirdcolor);
 grid-area: 1 / 1 / 3 / 2;
+display: flex;
+flex-direction: column;
+gap: 40px;
+padding: 20px;
+}
+
+nav a {
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
 main {
@@ -90,10 +101,10 @@ h2 {
 }
 
 a {
-	display: flex;
-	align-items: center;
 	text-decoration: none;
 }
+
+
 a:visited {
 	color: var(--thirdcolor);
 }
@@ -140,4 +151,11 @@ a:visited {
 	margin-block: 10px;
 	flex: 1;
 	display: grid;
+}
+
+.navblock {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 12px; 
 }
